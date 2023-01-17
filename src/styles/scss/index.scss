@@ -1,0 +1,72 @@
+@use 'typography.scss' as *;
+@use 'colors.scss' as *;
+@use 'base-var.scss' as *;
+@use 'utils.scss' as *;
+@use 'components/index.scss' as *;
+
+:root {
+  --base: #{$base};
+  --base-half: #{$base* 0.5};
+  --base-2x: #{$base * 2};
+  --base-3x: #{$base * 3};
+  --base-4x: #{$base * 4};
+  --base-5x: #{$base * 5};
+  --base-6x: #{$base * 6};
+  --base-8x: #{$base * 8};
+  --base-animation-timing: cubic-bezier(0.2, 0, 0.3, 1);
+  --base-radius: #{$base-radius};
+  --base-transition: #{$base-transition};
+  --base-box-shadow: #{$base-box-shadow};
+  --text-sm: #{$text-sm};
+  --text-base: #{$text-base};
+  --text-md: #{$text-md};
+  --text-lg: #{$text-lg};
+  --text-xl: #{$text-xl};
+  --text-2xl: #{$text-2xl};
+  --text-3xl: #{$text-3xl};
+  --text-4xl: #{$text-4xl};
+  --color-silver: #{$color-silver};
+  --color-white: #{$color-white};
+  --color-black: #{$color-black};
+  --color-primary: #{$color-primary};
+  --color-bg: #{$color-bg};
+  --color-bg-1: #{$color-bg-1};
+  --color-bg-2: #{$color-bg-2};
+  --color-bg-3: #{$color-bg-3};
+  --color-text-primary: #{$color-text-primary};
+  --color-text-secondary: #{$color-text-secondary};
+  --color-text-info: #{$color-text-info};
+  --color-text-disabled: #{$color-text-disabled};
+  --color-text-1: #{$color-text-1};
+  --color-text-2: #{$color-text-2};
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font;
+  font-size: 16px; // Base
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-bg-3;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  cursor: pointer;
+}
+
